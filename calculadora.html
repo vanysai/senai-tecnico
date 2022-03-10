@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h2>Calculadora</h2>
+    <input type="number" id="x" placeholder="Digite o valor de X">
+    <br><br>
+    <input type="number" id="y" placeholder="Digite o valor de Y">
+    <br><br>
+    <input type="number" id="z" placeholder="Resultado" readonly>
+    <button type="button" onclick="somar()"> + </button>
+
+    <script>
+        const somar = function() {
+            let x = parseInt(document.getElementById('x').value); 
+            let y = parseInt(document.getElementById('y').value);
+            let z = document.getElementById('z');
+            z.value = x + y;
+        }
+    </script>
+
+</body>
+</html>
